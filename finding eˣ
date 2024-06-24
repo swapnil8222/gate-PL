@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    float prod, i, power, j, sum;
+    int x;
+    printf("enter power of e: ");
+    scanf("%d", &x);
+    sum=0;
+    for(j=1; j<=50; j++)
+    {
+        prod=1.0;
+        power=1.0;
+        for(i=1; i<=j; i++)
+        {
+             prod=prod*i;
+             power= power*x;
+        }
+        sum = sum + power/prod;
+    }
+    sum = sum+1;
+    printf("%f", sum);
+  
+}
