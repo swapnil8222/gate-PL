@@ -14,5 +14,8 @@ void f(int n )
 }
 int main() {
     // Write C code here
-    f(26);
+    int n;
+    printf("enter a no to convert: ");
+    scanf("%d", &n);
+    f(n);
 }
